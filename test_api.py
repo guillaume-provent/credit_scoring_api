@@ -26,6 +26,7 @@ def test_data_loading():
 def test_predict_valid_id(client):
     data = pd.read_csv(data_path)
     sk_id_curr = data['SK_ID_CURR'].iloc[0]
+    sk_id_curr = int(sk_id_curr)
 
     response = client.post('/predict', json={'SK_ID_CURR': sk_id_curr})
     json_data = response.get_json()
