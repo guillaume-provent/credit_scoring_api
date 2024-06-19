@@ -41,7 +41,7 @@ def predict():
         result = 'DOSSIER REFUSE'
 
     # Renvoi du résultat :
-    return jsonify({'Identifiant': sk_id_curr, 'Dossier': result})
+    return jsonify({'Identifiant': sk_id_curr, 'Dossier': result, 'Probabilite': proba, 'Seuil': THRESHOLD})
 
 if __name__ == '__main__':
     app.run(debug=True)
