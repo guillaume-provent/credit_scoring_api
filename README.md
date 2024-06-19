@@ -6,4 +6,4 @@ A partir d'une requête (/predict) avec l'indenfifiant du client ('SK_ID_CURR'),
 Le fichier data_api_medium.csv contient les données nécessaires à la prédiction, et le ficher model.pkl le modèle de prédicition.
 En cas de mise à jour du modèle, la constante THRESHOLD (seuil de classification) dans le fichier api.py devra être modifiée selon le paramétrage du modèle. 
 
-Le repository est paramétré avec Github Actions pour un déploiement continu sur Heroku, incluant les tests unitaires du fichier test_api.py.
+Le repository est paramétré avec Github Actions pour un déploiement continu sur Heroku (fichier de procédure Procfile), incluant les tests unitaires du fichier test_api.py.

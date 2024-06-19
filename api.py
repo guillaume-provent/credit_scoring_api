@@ -5,7 +5,7 @@ import joblib
 
 app = Flask(__name__)
 
-THRESHOLD = 0.5796610016401569
+THRESHOLD = 0.6205400652376516
 
 # Répertoire du fichier api.py :
 current_directory = os.path.dirname(os.path.abspath(__file__))
