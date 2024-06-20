@@ -23,7 +23,7 @@ data = pd.read_csv(data_path)
 def predict():
     # Récupération de l'identifiant du client à partir de la requête :
     sk_id_curr = request.json.get('SK_ID_CURR')
-    
+
     # Vérification de la présence de l'identifiant dans les données :
     if sk_id_curr not in data['SK_ID_CURR'].values:
         return jsonify({'error': 'Identifiant non trouvé'}), 404
