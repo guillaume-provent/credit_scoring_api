@@ -8,7 +8,7 @@ pandas==2.2.1
 pickleshare==0.7.5
 psutil==5.9.8
 pyyaml==6.0.1
-scikit-learn==1.5.0
+scikit-learn==1.4.2
 scipy==1.13.0
 flask==3.0.3
 gunicorn==22.0.0
