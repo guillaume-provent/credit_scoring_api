@@ -41,6 +41,8 @@ def test_predict_valid_id(client):
     assert response.status_code == 200
     assert 'Identifiant' in json_data
     assert 'Dossier' in json_data
+    assert 'Probabilite' in json_data
+    assert 'Seuil' in json_data
 
 
 # Test de la prédiction - Identifiant invalide
